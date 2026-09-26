@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>د. آلاء الكبيسي - عيادة التجميل والليزر | بغداد الكرادة</title>
+    <meta name="description" content="عيادة د. آلاء الكبيسي التخصصية في الجلدية والتجميل والليزر في بغداد، الكرادة شارع سلمان فائق. إزالة الشعر بالليزر، الفيلر والبوتكس، البلازما والمزيد.">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0057c0">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_IQ">
+    <meta property="og:title" content="د. آلاء الكبيسي - عيادة التجميل والليزر">
+    <meta property="og:description" content="عيادة تخصصية في الجلدية والتجميل والليزر في بغداد، الكرادة. أحدث الأجهزة وأفضل النتائج الطبيعية.">
+    <meta property="og:image" content="og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="د. آلاء الكبيسي - عيادة التجميل والليزر">
+    <meta name="twitter:description" content="عيادة تخصصية في الجلدية والتجميل والليزر في بغداد، الكرادة.">
+    <meta name="twitter:image" content="og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://lh3.googleusercontent.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="preload" as="image" href="hero-doctor.webp" type="image/webp" fetchpriority="high">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <meta name="color-scheme" content="light">
+    <link rel="stylesheet" href="styles.css?v=9">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "عيادة د. آلاء الكبيسي",
+        "description": "عيادة تخصصية في الجلدية والتجميل والليزر في بغداد، الكرادة.",
+        "medicalSpecialty": ["Dermatology", "CosmeticSurgery"],
+        "telephone": "+9647878449990",
+        "image": "hero-doctor.webp",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "شارع سلمان فائق، مجمع ابن النفيس الطبي، الطابق الأول",
+            "addressLocality": "بغداد، الكرادة",
+            "addressCountry": "IQ"
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "د. آلاء الكبيسي",
+            "jobTitle": "طبيبة جلدية وتجميل وليزر"
+        }
+    }
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#home">تخطَّ إلى المحتوى الرئيسي</a>
+    <!-- Animated Background Canvas -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- TopNavBar -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a class="nav-brand" href="#home">
+                <picture>
+                    <source srcset="logo.webp" type="image/webp">
+                    <img alt="د. آلاء الكبيسي" class="nav-logo" src="logo.png" width="192" height="192">
+                </picture>
+                <span class="nav-brand-text">د. آلاء الكبيسي</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#services" class="nav-link">الخدمات</a></li>
+                <li><a href="#about" class="nav-link">عن الدكتورة</a></li>
+                <li><a href="#clinic-technologies" class="nav-link">عالمنا الطبي</a></li>
+                <li><a href="#gallery" class="nav-link">المعرض</a></li>
+                <li><a href="#faq" class="nav-link">الأسئلة</a></li>
+                <li><a href="#location" class="nav-link">الموقع</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobile-menu" aria-haspopup="true">
+                <span class="mobile-menu-icon" aria-hidden="true">
+                    <span class="material-symbols-outlined icon-open">menu</span>
+                    <span class="material-symbols-outlined icon-close">close</span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (sibling of nav so it anchors to viewport, not the blurred navbar) -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul class="mobile-menu-links">
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#about">عن الدكتورة</a></li>
+            <li><a href="#clinic-technologies">عالمنا الطبي</a></li>
+            <li><a href="#gallery">المعرض</a></li>
+            <li><a href="#faq">الأسئلة</a></li>
+            <li><a href="#location">الموقع</a></li>
+        </ul>
+        <a class="mobile-cta" href="#booking" onclick="openBooking(event)">احجز الآن</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Cinematic haze layer - animated mist (Canvas 2D) behind all hero content -->
+        <div class="hero-mist" aria-hidden="true">
+            <canvas class="hero-smoke"></canvas>
+        </div>
+        <div class="hero-inner">
+            <!-- Text Content -->
+            <div class="hero-text">
+                <h1 class="hero-title anim-item" data-delay="0">د. آلاء فاصل الكبيسي</h1>
+                <p class="hero-subtitle anim-item" data-delay="100">اختصاص جلدية وتجميل وليزر</p>
+                <p class="hero-credential anim-item" data-delay="150">
+                    <span class="material-symbols-outlined verified-icon">school</span>
+                    ماجستير في الأمراض الجلدية والتناسلية، الليزر، والتجميل غير الجراحي
+                </p>
+                <p class="hero-desc anim-item" data-delay="200">
+                    <span class="material-symbols-outlined verified-icon">verified</span>
+                    خبرة أكثر من 5 سنوات في تقديم الرعاية الطبية والتجميلية.
+                </p>
+                <div class="hero-cta anim-item" data-delay="300">
+                    <a class="btn-primary pulse-btn" href="#booking" onclick="openBooking(event)">
+                        احجز موعد
+                        <span class="material-symbols-outlined">calendar_month</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Image Content -->
+            <div class="hero-image anim-item" data-delay="200">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-blob"></div>
+                    <div class="hero-image-halo"></div>
+                    <picture>
+                        <source srcset="hero-doctor.webp" type="image/webp">
+                        <img alt="Dr. Alaa Alkubasi" class="hero-img" src="hero-doctor.png" width="929" height="1589" fetchpriority="high" decoding="async" style="aspect-ratio: 929/1589;">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="glass-card stat-card scroll-reveal" data-delay="0">
+                    <div class="stat-icon"><span class="material-symbols-outlined">stethoscope</span></div>
+                    <h3 class="stat-number">5+ سنوات خبرة</h3>
+                </div>
+                <div class="glass-card stat-card scroll-reveal" data-delay="100">
+                    <div class="stat-icon"><span class="material-symbols-outlined">school</span></div>
+                    <h3 class="stat-title">طب النهرين</h3>
+                    <p class="stat-sub">2016/2017</p>
+                </div>
+                <div class="glass-card stat-card scroll-reveal" data-delay="200">
+                    <div class="stat-icon gold"><span class="material-symbols-outlined">workspace_premium</span></div>
+                    <h3 class="stat-title">الدبلوم البريطاني</h3>
+                    <p class="stat-sub">في التجميل</p>
+                </div>
+                <div class="glass-card stat-card scroll-reveal" data-delay="300">
+                    <div class="stat-icon"><span class="material-symbols-outlined">star</span></div>
+                    <h3 class="stat-title">مئات الحالات</h3>
+                    <p class="stat-sub">الناجحة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title gold-gradient">خدماتنا المتميزة</h2>
+                <p class="section-desc">نقدم أحدث التقنيات في مجال الجلدية والتجميل لضمان أفضل النتائج الطبيعية والآمنة.</p>
+            </div>
+            <div class="services-grid">
+                <div class="glass-card service-card scroll-reveal" data-delay="0">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon"><span class="material-symbols-outlined">flare</span></div>
+                    </div>
+                    <h3>إزالة الشعر بالليزر</h3>
+                    <p>باستخدام أحدث الأجهزة لنتائج فعالة وآمنة لجميع أنواع البشرة.</p>
+                </div>
+                <div class="glass-card service-card scroll-reveal" data-delay="100">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon"><span class="material-symbols-outlined">vaccines</span></div>
+                    </div>
+                    <h3>حقن الفيلر والبوتكس</h3>
+                    <p>لمسات دقيقة لاستعادة الشباب وإبراز الجمال الطبيعي.</p>
+                </div>
+                <div class="glass-card service-card scroll-reveal" data-delay="200">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon"><span class="material-symbols-outlined">face_retouching_natural</span></div>
+                    </div>
+                    <h3>تنظيف البشرة</h3>
+                    <p>جلسات تنظيف عميق وتغذية لبشرة نضرة ومشرقة.</p>
+                </div>
+                <div class="glass-card service-card scroll-reveal" data-delay="300">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon"><span class="material-symbols-outlined">layers</span></div>
+                    </div>
+                    <h3>التقشير</h3>
+                    <p>تجديد خلايا البشرة وعلاج التصبغات والندبات السطحية.</p>
+                </div>
+                <div class="glass-card service-card scroll-reveal" data-delay="400">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon"><span class="material-symbols-outlined">syringe</span></div>
+                    </div>
+                    <h3>البلازما</h3>
+                    <p>لتحفيز الكولاجين وعلاج تساقط الشعر ونضارة الوجه.</p>
+                </div>
+                <div class="glass-card service-card scroll-reveal" data-delay="500">
+                    <div class="service-icon-wrap">
+                        <div class="service-icon-bg"></div>
+                        <div class="service-icon"><span class="material-symbols-outlined">local_florist</span></div>
+                    </div>
+                    <h3>العناية بالبشرة</h3>
+                    <p>برامج متكاملة مخصصة للحفاظ على صحة وجمال بشرتك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="why-us-section">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="glass-card why-card scroll-reveal" data-delay="0">
+                    <div class="why-icon"><span class="material-symbols-outlined">check_circle</span></div>
+                    <span>أجهزة حديثة</span>
+                </div>
+                <div class="glass-card why-card scroll-reveal" data-delay="100">
+                    <div class="why-icon"><span class="material-symbols-outlined">check_circle</span></div>
+                    <span>نتائج طبيعية</span>
+                </div>
+                <div class="glass-card why-card scroll-reveal" data-delay="200">
+                    <div class="why-icon"><span class="material-symbols-outlined">check_circle</span></div>
+                    <span>خبرة طبية</span>
+                </div>
+                <div class="glass-card why-card scroll-reveal" data-delay="300">
+                    <div class="why-icon"><span class="material-symbols-outlined">check_circle</span></div>
+                    <span>متابعة بعد العلاج</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Doctor + Timeline -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left: Image & Bio -->
+                <div class="about-bio scroll-reveal">
+                    <div class="doctor-portrait-wrapper">
+                        <div class="doctor-portrait floating" id="doctor-portrait">
+                            <img alt="Dr. Alaa Portrait" class="doctor-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT9zpwE9Xb5Np7Cig8d1PI4GfLfAcjUX4WWyBYrrZH9wOAbG17L-UF-IglUehbpBMD0s8sJEd1ppa7L5pAd59yWwf3CGuDrY_K_ZYsPXv27PUHayCcTMisivTrXx3xGD0nQ_sSJPCp_2rKVdsIrAwyCb1SVNfbM5vWuKdcL4dnKzlaaIUbmh0mU63LVOKKmoKap-35l7wOmef5eD-Lcus2z_qeWyN3K9zFU3dsPCEOzePl_uZZEVSQigTrTgqaHXG-KMI" loading="lazy" decoding="async" width="720" height="720">
+                        </div>
+                    </div>
+                    <div class="bio-text">
+                        <h2 class="bio-name">الدكتورة آلاء الكبيسي</h2>
+                        <p>طبيبة مختصة في الأمراض الجلدية والتجميل والعلاج بالليزر. تخرجت من كليةطب جامعة النهرين (2016-2017)، وأكملت تخصصها في الجلدية (2023-2024).</p>
+                        <p>حاصلة على الدبلوم البريطاني في التجميل، وتتميز بخبرتها العالية في تقديم علاجات آمنة وفعالة تبرز الجمال الطبيعي للمراجعين.</p>
+                    </div>
+                </div>
+                <!-- Right: Timeline -->
+                <div class="timeline-wrapper scroll-reveal">
+                    <h3 class="timeline-heading">المسيرة المهنية</h3>
+                    <div class="timeline">
+                        <div class="timeline-line" id="timeline-line"></div>
+                        <div class="timeline-item" data-delay="0">
+                            <div class="timeline-card glass-card">
+                                <h4>خريجة طب النهرين</h4>
+                                <p>2016 - 2017</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item" data-delay="200">
+                            <div class="timeline-card glass-card">
+                                <h4>اختصاص جلدية</h4>
+                                <p>2023 - 2024</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item" data-delay="400">
+                            <div class="timeline-card glass-card">
+                                <h4>الدبلوم البريطاني</h4>
+                                <p>في التجميل الطبي</p>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-item" data-delay="600">
+                            <div class="timeline-card glass-card highlighted">
+                                <h4 class="highlighted-text">افتتاح العيادة الخاصة</h4>
+                                <p>تقديم أرقى الخدمات الطبية</p>
+                            </div>
+                            <div class="timeline-dot primary"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installment Banner -->
+    <section class="installment-section">
+        <div class="container">
+            <div class="installment-banner scroll-reveal">
+                <span class="material-symbols-outlined installment-icon">credit_card</span>
+                <h3>يوجد نظام أقساط لتسهيل العلاج</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic & Technologies (static) -->
+    <section class="clinic-section" id="clinic-technologies" dir="rtl">
+        <div class="clinic-top-edge" aria-hidden="true"></div>
+
+        <!-- Page Header -->
+        <header class="clinic-header scroll-reveal">
+            <h2 class="clinic-title">عالمنا <span class="clinic-title-gold">الطبّي</span></h2>
+            <p class="clinic-subtitle">جولة داخل عيادة د. آلاء الكبيسي للتعرف على بيئة العمل وأحدث التقنيات المستخدمة من أجل راحتكِ وجمالكِ.</p>
+        </header>
+
+        <!-- Section 1 - Reception -->
+        <div class="clinic-row" data-delay="0">
+            <figure class="clinic-figure scroll-reveal">
+                <div class="clinic-blob clinic-blob-sky" aria-hidden="true"></div>
+                <div class="clinic-img-wrap">
+                    <picture>
+                        <source srcset="clinic-splendor.webp" type="image/webp">
+                        <img src="IMG-20260907-WA0000.jpg" alt="جهاز سبليندور إكس Splendor X لإزالة الشعر بالليزر" loading="lazy" decoding="async" width="848" height="1264" style="aspect-ratio: 848/1264;">
+                    </picture>
+                </div>
+                <div class="clinic-badge">
+                    <span class="clinic-badge-dot"></span>
+                    <span class="clinic-badge-text">فريق متخصص في خدمتكِ</span>
+                </div>
+            </figure>
+            <div class="clinic-body scroll-reveal" data-delay="100">
+                <div class="clinic-number">
+                    <span class="clinic-num-badge">01</span>
+                    <span class="clinic-num-line"></span>
+                </div>
+                <h3 class="clinic-h3">استقبال يضمن لكِ الراحة والخصوصية</h3>
+                <p class="clinic-p">نؤمن بأن رحلة العلاج والجمال تبدأ من لحظة دخولكِ إلى العيادة، لذلك حرصنا على توفير صالة انتظار مريحة وهادئة ترتقي إلى أعلى معايير النظافة. كادر الاستقبال لدينا متواجد دائماً لاستقبالكِ، وتنظيم المواعيد بدقة لضمان عدم التأخير، والإجابة عن جميع استفساراتكِ، وتقديم النصائح اللازمة قبل وبعد الجلسات.</p>
+            </div>
+        </div>
+
+        <!-- Section 2 - Splendor X -->
+        <div class="clinic-row clinic-row-flip" data-delay="0">
+            <figure class="clinic-figure scroll-reveal">
+                <div class="clinic-blob clinic-blob-blue" aria-hidden="true"></div>
+                <div class="clinic-img-wrap">
+                    <picture>
+                        <source srcset="clinic-reception.webp" type="image/webp">
+                        <img src="IMG-20260906-WA0001.jpg" alt="استقبال عيادة د. آلاء الكبيسي" loading="lazy" decoding="async" width="768" height="1362" style="aspect-ratio: 768/1362;">
+                    </picture>
+                </div>
+            </figure>
+            <div class="clinic-body scroll-reveal" data-delay="100">
+                <div class="clinic-number">
+                    <span class="clinic-num-badge">02</span>
+                    <span class="clinic-num-line"></span>
+                </div>
+                <h3 class="clinic-h3">تقنيات عالمية متطورة بين يديكِ</h3>
+                <p class="clinic-p">تعتمد عيادتنا على أجهزة طبية متقدمة لضمان نتائج فعالة وآمنة. ونفخر بتوفير جهاز <b class="clinic-strong">سبليندور إكس Splendor X</b> — الأحدث والأقوى في مجال إزالة الشعر بالليزر — والذي يتميز بـ:</p>
+                <ul class="clinic-features">
+                    <li class="clinic-feature">
+                        <i class="clinic-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 9.5 17 19 7"/></svg></i>
+                        <span>تقنية الموجتين (Alexandrite و Nd:YAG) لفعالية قصوى تناسب جميع أنواع البشرة.</span>
+                    </li>
+                    <li class="clinic-feature">
+                        <i class="clinic-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 9.5 17 19 7"/></svg></i>
+                        <span>نظام تبريد مزدوج يضمن جلسة مريحة تماماً وخالية من الألم.</span>
+                    </li>
+                    <li class="clinic-feature">
+                        <i class="clinic-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5 9.5 17 19 7"/></svg></i>
+                        <span>بقعة ليزر مربعة لتغطية أسرع للمساحات الكبيرة دون ترك أي فراغات.</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 3 - Lounge -->
+        <div class="clinic-row" data-delay="0">
+            <figure class="clinic-figure scroll-reveal">
+                <div class="clinic-blob clinic-blob-sky" aria-hidden="true"></div>
+                <div class="clinic-img-wrap">
+                    <img src="غرفة-الاستقبال.jpg" alt="صالة الانتظار في عيادة د. آلاء الكبيسي" loading="lazy" decoding="async" width="900" height="1600" style="aspect-ratio: 900/1600;">
+                </div>
+                <div class="clinic-badge">
+                    <span class="clinic-badge-dot"></span>
+                    <span class="clinic-badge-text">بيئة مريحة وخصوصية تامة</span>
+                </div>
+            </figure>
+            <div class="clinic-body scroll-reveal" data-delay="100">
+                <div class="clinic-number">
+                    <span class="clinic-num-badge">03</span>
+                    <span class="clinic-num-line"></span>
+                </div>
+                <h3 class="clinic-h3">أجواء مريحة تجعل زيارتكِ تجربة فريدة</h3>
+                <p class="clinic-p">صُممت صالة الانتظار بعناية فائقة لتمنحكِ الشعور بالاسترخاء والدفء قبل بدء جلستكِ. جلسات مريحة بألوان دافئة، ديكورات حديثة، وبيئة هادئة نضمن لكِ فيها أقصى درجات الخصوصية والراحة النفسية طوال فترة تواجدكِ معنا.</p>
+            </div>
+        </div>
+
+        <!-- Section 4 - Medical Products -->
+        <div class="clinic-row clinic-row-flip" data-delay="0">
+            <figure class="clinic-figure scroll-reveal">
+                <div class="clinic-blob clinic-blob-blue" aria-hidden="true"></div>
+                <div class="clinic-img-wrap">
+                    <img src="صور_منتجات_التجميل.jpg" alt="ركن منتجات العناية الطبية في عيادة د. آلاء الكبيسي" loading="lazy" decoding="async" width="900" height="1600" style="aspect-ratio: 900/1600;">
+                </div>
+                <div class="clinic-badge">
+                    <span class="clinic-badge-dot"></span>
+                    <span class="clinic-badge-text">منتجات طبية معتمدة</span>
+                </div>
+            </figure>
+            <div class="clinic-body scroll-reveal" data-delay="100">
+                <div class="clinic-number">
+                    <span class="clinic-num-badge">04</span>
+                    <span class="clinic-num-line"></span>
+                </div>
+                <h3 class="clinic-h3">ركن العناية المكملة والمنتجات الطبية</h3>
+                <p class="clinic-p">حرصاً منا على استدامة نتائج العلاج والجمال، نوفر لكِ في العيادة ركناً خاصاً لأجود مستحضرات العناية بالبشرة والشعر من الماركات العالمية المعتمدة طبياً (مثل <b class="clinic-strong">PURBELL</b>). نوفر لكِ استشارات مخصصة لوصف المنتجات المناسبة لنوع بشرتكِ وشعركِ لمتابعة العناية اليومية في المنزل بأمان وفاعلية.</p>
+            </div>
+        </div>
+
+        <!-- Call To Action -->
+        <div class="clinic-cta scroll-reveal">
+            <h3 class="clinic-cta-title">جاهزون لبدء رحلتكِ نحو الجمال</h3>
+            <p class="clinic-cta-text">احجزي موعدكِ الآن واستمتعي بتجربة راقية مع أحدث التقنيات.</p>
+            <a href="#booking" class="clinic-cta-btn" onclick="openBooking(event)">
+                <span>احجزي جلستك الآن</span>
+                <svg class="clinic-cta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="16" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title gold-gradient">معرض الصور</h2>
+                <p class="section-desc">نتائج واقعية من داخل العيادة</p>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Items are rendered from Supabase by app.js -->
+                <div class="gallery-loading" id="gallery-loading" role="status" aria-live="polite">
+                    <span class="gallery-loading-spinner" aria-hidden="true"></span>
+                    <span>جارٍ تحميل المعرض…</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+        <div class="container container-sm">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">الأسئلة الشائعة</h2>
+                <p class="section-desc">كل ما تودين معرفته عن خدماتنا</p>
+            </div>
+            <div class="faq-list">
+                <div class="glass-card faq-item scroll-reveal" data-delay="0">
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" onclick="toggleFaq(this)">
+                        <div class="faq-icon-wrap">
+                            <div class="faq-icon-bg"></div>
+                            <div class="faq-icon"><span class="material-symbols-outlined">payments</span></div>
+                        </div>
+                        <div class="faq-text">
+                            <h3>هل يوجد نظام أقساط؟</h3>
+                            <p id="faq-answer-1">نعم، نوفر أنظمة تقسيط مريحة لتسهيل الحصول على كافة الخدمات التجميلية والطبية.</p>
+                        </div>
+                        <div class="faq-chevron"><span class="material-symbols-outlined">expand_more</span></div>
+                    </button>
+                </div>
+                <div class="glass-card faq-item scroll-reveal" data-delay="100">
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" onclick="toggleFaq(this)">
+                        <div class="faq-icon-wrap">
+                            <div class="faq-icon-bg gold-bg"></div>
+                            <div class="faq-icon gold-icon"><span class="material-symbols-outlined">schedule</span></div>
+                        </div>
+                        <div class="faq-text">
+                            <h3>كم مدة الجلسة؟</h3>
+                            <p id="faq-answer-2">تختلف المدة حسب نوع الإجراء، ولكن غالباً ما تستغرق الجلسات ما بين 20 إلى 45 دقيقة.</p>
+                        </div>
+                        <div class="faq-chevron"><span class="material-symbols-outlined">expand_more</span></div>
+                    </button>
+                </div>
+                <div class="glass-card faq-item scroll-reveal" data-delay="200">
+                    <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" onclick="toggleFaq(this)">
+                        <div class="faq-icon-wrap">
+                            <div class="faq-icon-bg"></div>
+                            <div class="faq-icon"><span class="material-symbols-outlined">magic_button</span></div>
+                        </div>
+                        <div class="faq-text">
+                            <h3>هل الليزر مؤلم؟</h3>
+                            <p id="faq-answer-3">نستخدم أحدث الأجهزة المزودة بأنظمة تبريد متطورة لضمان تجربة مريحة وغير مؤلمة تماماً.</p>
+                        </div>
+                        <div class="faq-chevron"><span class="material-symbols-outlined">expand_more</span></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section" id="location">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-info scroll-reveal">
+                    <h2 class="section-title gold-gradient location-title">موقع العيادة</h2>
+                    <div class="location-item">
+                        <div class="location-icon-wrap glass-card">
+                            <span class="material-symbols-outlined">location_on</span>
+                        </div>
+                        <div>
+                            <h4>العنوان:</h4>
+                            <p>الكرادة، شارع سلمان فائق<br>مجمع ابن النفيس الطبي، الطابق الأول</p>
+                        </div>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-icon-wrap glass-card">
+                            <span class="material-symbols-outlined">schedule</span>
+                        </div>
+                        <div>
+                            <h4>أوقات الدوام:</h4>
+                            <p>يرجى التواصل لتأكيد أوقات الحجز المتاحة.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map scroll-reveal">
+                    <div class="map-wrapper">
+                        <img loading="lazy" decoding="async" class="map-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcmUgIUtqCj6TmD49Wt7dAmVijuHhMfhm-SDExjLGgM9UVRlPDsEcHfN0HHpAIp-v2gNhqNzg42vxRmrCZqEsA7gpruhO2kC3sZjDvTbf1GvajtlPjZOTEaXhnvE0CRdNmhOjy206kLQp67qGfCPs66s-9PSM0aLQYviCGIVQk3lybu7YMTBvyX721R1JiuKQ1DhZf_S99Q1ZfdRWGnErUkAA4O8tdddatCznEI0bSijjhDSPSw_hS2Ny4ltWfd9FLLxg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <p>عيادة متخصصة في الجلدية والتجميل والليزر، نسعى لتقديم أفضل الخدمات الطبية بأعلى معايير الجودة والأمان.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#clinic-technologies">عالمنا الطبي</a></li>
+                        <li><a href="#gallery">المعرض</a></li>
+                        <li><a href="#about">عن الدكتورة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>تواصل معنا</h4>
+                    <ul>
+                        <li><span class="material-symbols-outlined">location_on</span> الكرادة، شارع سلمان فائق</li>
+                        <li><a href="https://wa.me/9647878449990" target="_blank" rel="noopener">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="#25d366" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+                            واتساب
+                        </a></li>
+                        <li><a href="https://www.facebook.com/share/1MQG2bNFFV/" target="_blank" rel="noopener">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="#1877f2" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            فيسبوك
+                        </a></li>
+                        <li><a href="https://www.instagram.com/dr.alaa.alkubaisy" target="_blank" rel="noopener">
+                            <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig-brand" x1="1" y1="1" x2="23" y2="23" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#feda75"/><stop offset=".4" stop-color="#d62976"/><stop offset="1" stop-color="#4f5bd5"/></linearGradient></defs><path fill="url(#ig-brand)" d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                            إنستغرام
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year">٢٠٢٦</span> د. آلاء الكبيسي. جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a class="whatsapp-btn" href="https://wa.me/9647878449990" target="_blank" rel="noopener" aria-label="تواصل عبر واتساب">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        <div class="whatsapp-tooltip">تواصل معنا</div>
+    </a>
+
+    <!-- Gallery Lightbox -->
+    <div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="الصورة السابقة"><span class="material-symbols-outlined">chevron_right</span></button>
+        <figure class="lightbox-figure">
+            <img id="lightbox-img" src="" alt="">
+            <figcaption id="lightbox-caption"></figcaption>
+        </figure>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="الصورة التالية"><span class="material-symbols-outlined">chevron_left</span></button>
+        <button class="lightbox-close" id="lightbox-close" aria-label="إغلاق"><span class="material-symbols-outlined">close</span></button>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="booking-modal" aria-hidden="true">
+        <div class="modal-backdrop" onclick="closeBooking()"></div>
+        <div class="glass-card modal-content" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+            <div class="modal-header">
+                <h3 id="booking-title">حجز موعد جديد</h3>
+                <button class="modal-close" onclick="closeBooking()" aria-label="إغلاق"><span class="material-symbols-outlined">close</span></button>
+            </div>
+            <form class="modal-body" id="booking-form" onsubmit="return submitBooking(event)" novalidate>
+                <p class="form-error" id="booking-error" role="alert" aria-live="polite"></p>
+                <div class="form-group">
+                    <label for="booking-name">الاسم الكامل</label>
+                    <input type="text" id="booking-name" name="name" placeholder="أدخل اسمك هنا" autocomplete="name" maxlength="80">
+                </div>
+                <div class="form-group">
+                    <label for="booking-phone">رقم الهاتف</label>
+                    <input type="tel" id="booking-phone" name="phone" placeholder="07XXXXXXXXX" inputmode="tel" autocomplete="tel" maxlength="20">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="booking-service">الخدمة المطلوبة</label>
+                        <select id="booking-service" name="service">
+                            <option value="" selected>اختر الخدمة</option>
+                            <option>إزالة الشعر بالليزر</option>
+                            <option>حقن الفيلر والبوتكس</option>
+                            <option>تنظيف البشرة</option>
+                            <option>التقشير</option>
+                            <option>البلازما</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="booking-date">التاريخ</label>
+                        <input type="date" id="booking-date" name="date">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="booking-notes">ملاحظات (اختياري)</label>
+                    <textarea id="booking-notes" name="notes" rows="3" maxlength="600" placeholder="أي تفاصيل إضافية تودّين ذكرها"></textarea>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="modal-cancel" id="booking-cancel" onclick="closeBooking()">إلغاء</button>
+                    <button type="submit" class="btn-primary modal-submit" id="booking-submit">تأكيد الحجز</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="gallery-config.js" defer></script>
+    <script src="gallery-api.js" defer></script>
+    <script src="app.js?v=9" defer></script>
+</body>
+</html>

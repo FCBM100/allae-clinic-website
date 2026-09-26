@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>لوحة إدارة المعرض | عيادة د. آلاء الكبيسي</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#0057c0">
+    <meta name="color-scheme" content="light">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="admin.css?v=3">
+</head>
+<body>
+    <div class="admin-page">
+
+        <!-- ===== LOGIN VIEW ===== -->
+        <section class="login-view" id="login-view" aria-label="تسجيل الدخول">
+            <div class="login-card">
+                <div class="login-brand">
+                    <picture>
+                        <source srcset="logo.webp" type="image/webp">
+                        <img src="logo.png" alt="شعار العيادة" width="52" height="52">
+                    </picture>
+                    <div>
+                        <h1 class="login-brand-title">عيادة د. آلاء الكبيسي</h1>
+                        <p class="login-brand-sub">لوحة إدارة معرض الصور</p>
+                    </div>
+                </div>
+                <h2 class="login-title">تسجيل الدخول</h2>
+                <p class="login-hint">أدخل بيانات المدير للوصول إلى لوحة التحكم</p>
+                <form id="login-form" novalidate>
+                    <p class="login-error" id="login-error" role="alert" aria-live="polite"></p>
+                    <div class="login-field">
+                        <label for="login-email">البريد الإلكتروني</label>
+                        <input type="email" id="login-email" name="email" placeholder="admin@allaeclinic.com" autocomplete="username" required>
+                    </div>
+                    <div class="login-field">
+                        <label for="login-password">كلمة المرور</label>
+                        <input type="password" id="login-password" name="password" placeholder="••••••••" autocomplete="current-password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="login-submit">
+                        <span class="mat-icon" id="login-submit-icon">login</span>
+                        <span id="login-submit-label">دخول</span>
+                    </button>
+                </form>
+                <a href="index.html" class="sidebar-back" style="margin-top:20px;justify-content:center;display:flex;">
+                    <span class="mat-icon">arrow_right_alt</span>
+                    العودة إلى الموقع
+                </a>
+            </div>
+        </section>
+
+        <!-- ===== ADMIN APP ===== -->
+        <div class="admin-app" id="admin-app">
+            <aside class="admin-sidebar" id="admin-sidebar" aria-label="القائمة الجانبية">
+                <div class="sidebar-brand">
+                    <picture>
+                        <source srcset="logo.webp" type="image/webp">
+                        <img src="logo.png" alt="شعار العيادة" width="42" height="42">
+                    </picture>
+                    <div>
+                        <div class="sidebar-brand-title">عيادة د. آلاء الكبيسي</div>
+                        <div class="sidebar-brand-sub">معرض الصور</div>
+                    </div>
+                </div>
+                <nav class="sidebar-nav">
+                    <div class="sidebar-label">الإدارة</div>
+                    <a href="#gallery" class="sidebar-link active" data-nav="gallery">
+                        <span class="mat-icon">burst_mode</span>
+                        <span>معرض الصور</span>
+                    </a>
+                    <a href="#add" class="sidebar-link" data-nav="add">
+                        <span class="mat-icon">add_photo_alternate</span>
+                        <span>إضافة صورة</span>
+                    </a>
+                    <div class="sidebar-label">روابط</div>
+                    <a href="index.html" class="sidebar-link" data-nav="site">
+                        <span class="mat-icon">language</span>
+                        <span>عرض الموقع</span>
+                    </a>
+                </nav>
+                <div class="sidebar-footer">
+                    <button type="button" class="sidebar-link danger" id="logout-btn" style="width:100%;background:none;border:none;cursor:pointer;font-family:inherit;font-size:0.9rem;font-weight:700;text-align:start;">
+                        <span class="mat-icon">logout</span>
+                        <span>تسجيل الخروج</span>
+                    </button>
+                </div>
+            </aside>
+            <div class="sidebar-scrim" id="sidebar-scrim"></div>
+
+            <main class="admin-main">
+                <header class="admin-topbar">
+                    <button type="button" class="topbar-menu-btn" id="sidebar-toggle" aria-label="فتح القائمة" aria-expanded="false">
+                        <span class="mat-icon">menu</span>
+                    </button>
+                    <div>
+                        <h1 class="topbar-title">إدارة معرض الصور</h1>
+                        <p class="topbar-sub" id="topbar-sub">إدارة صور ووصف المعرض مباشرة من Supabase</p>
+                    </div>
+                    <div class="topbar-spacer"></div>
+                    <div class="topbar-user">
+                        <span class="topbar-avatar" id="admin-avatar">م</span>
+                        <div>
+                            <div class="topbar-user-name" id="admin-email">admin</div>
+                            <div class="topbar-user-role">مدير المعرض</div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="admin-content">
+                    <!-- Stats -->
+                    <div class="stats-grid" id="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon navy"><span class="mat-icon">collections</span></div>
+                            <div>
+                                <div class="stat-value" id="stat-total">—</div>
+                                <div class="stat-label">إجمالي الصور</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon gold"><span class="mat-icon">star</span></div>
+                            <div>
+                                <div class="stat-value" id="stat-tall">—</div>
+                                <div class="stat-label">مميزة (كبيرة)</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon green"><span class="mat-icon">cloud_done</span></div>
+                            <div>
+                                <div class="stat-value" id="stat-status">متصل</div>
+                                <div class="stat-label">حالة Supabase</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Toolbar -->
+                    <div class="admin-toolbar">
+                        <div class="search-box">
+                            <span class="mat-icon">search</span>
+                            <input type="search" id="search-input" placeholder="ابحث في التسميات أو الوصف… (Ctrl + /)" aria-label="بحث">
+                            <button type="button" class="search-clear" id="search-clear" aria-label="مسح البحث">
+                                <span class="mat-icon" style="font-size:18px;">close</span>
+                            </button>
+                        </div>
+                        <button type="button" class="btn btn-ghost" id="refresh-btn">
+                            <span class="mat-icon">refresh</span>
+                            تحديث
+                        </button>
+                        <button type="button" class="btn btn-primary" id="add-btn">
+                            <span class="mat-icon">add</span>
+                            إضافة صورة
+                        </button>
+                    </div>
+
+                    <!-- Empty / no results hint -->
+                    <div class="empty-hint" id="empty-hint">
+                        <span class="mat-icon">photo_library</span>
+                        <span id="empty-hint-text">لا توجد صور بعد. ابدأ بإضافة أول صورة للمعرض.</span>
+                    </div>
+
+                    <!-- Gallery cards -->
+                    <div class="gallery-admin-grid" id="admin-grid" aria-live="polite"></div>
+                </div>
+            </main>
+        </div>
+
+        <!-- ===== ADD / EDIT MODAL ===== -->
+        <div class="modal-overlay" id="item-modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-backdrop" data-close-modal></div>
+            <div class="modal">
+                <div class="modal-header">
+                    <div>
+                        <h2 class="modal-title" id="item-modal-title">إضافة صورة جديدة</h2>
+                        <p class="modal-sub" id="item-modal-sub">سيتم رفع الصورة إلى Supabase Storage وربطها بالسجل</p>
+                    </div>
+                    <button type="button" class="modal-close" data-close-modal aria-label="إغلاق">
+                        <span class="mat-icon">close</span>
+                    </button>
+                </div>
+                <form id="item-form" novalidate>
+                    <p class="form-error" id="item-form-error" role="alert" aria-live="polite"></p>
+
+                    <div class="form-group">
+                        <label>صورة المعرض <span class="req" id="file-req">*</span></label>
+                        <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="اختر صورة من الجهاز">
+                            <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp,image/gif,image/avif" hidden>
+                            <div class="dropzone-empty">
+                                <span class="mat-icon">image</span>
+                                <div class="dropzone-text">اسحب الصورة هنا أو انقر للاختيار</div>
+                                <div class="dropzone-sub">JPG · PNG · WebP — حتى 10MB</div>
+                            </div>
+                            <div class="dropzone-preview" id="dropzone-preview">
+                                <img id="preview-img" alt="معاينة الصورة">
+                                <span class="chosen-label">صورة مختارة</span>
+                                <span class="chosen-name" id="preview-name"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="item-label">التسمية <span class="req">*</span></label>
+                            <input type="text" id="item-label" class="form-input" maxlength="60" placeholder="مثال: قبل / بعد" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="item-tall" class="checkbox-label" style="padding-top:26px;">
+                                <input type="checkbox" id="item-tall">
+                                صورة كبيرة مميزة
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="item-desc">الوصف</label>
+                        <textarea id="item-desc" class="form-textarea" maxlength="300" placeholder="وصف قصير يظهر داخل المعرض…"></textarea>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button type="button" class="btn btn-ghost" data-close-modal>إلغاء</button>
+                        <button type="submit" class="btn btn-primary" id="item-submit">
+                            <span class="mat-icon" id="item-submit-icon">add</span>
+                            <span id="item-submit-label">إضافة</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- ===== CONFIRM DELETE MODAL ===== -->
+        <div class="modal-overlay" id="confirm-modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-backdrop" data-close-modal></div>
+            <div class="modal modal-small">
+                <div class="confirm-icon"><span class="mat-icon">delete</span></div>
+                <h2 class="modal-title" style="text-align:center;">حذف الصورة؟</h2>
+                <p class="confirm-text" id="confirm-text">سيتم حذف <strong>الصورة</strong> من المعرض نهائياً.</p>
+                <div class="modal-actions">
+                    <button type="button" class="btn btn-ghost" data-close-modal>إلغاء</button>
+                    <button type="button" class="btn btn-danger" id="confirm-delete-btn">حذف نهائي</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ===== TOASTS ===== -->
+        <div class="toast-wrap" id="toast-wrap" aria-live="polite"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="gallery-config.js" defer></script>
+    <script src="gallery-api.js" defer></script>
+    <script src="admin.js?v=2" defer></script>
+</body>
+</html>
