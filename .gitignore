@@ -33,8 +33,6 @@ graphify-out/
 _archive/
 
 # Unreferenced source photos (optimised .webp versions are the shipped ones)
-صور_منتجات_التجميل.jpg
-غرفة-الاستقبال.jpg
 
 # Editor directories and files
 .vscode/*
