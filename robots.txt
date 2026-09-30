@@ -1,0 +1,19 @@
+# https://allae-clinic-website.vercel.app/
+# Clinic website - crawler policy.
+
+User-agent: *
+Allow: /
+
+# Admin dashboard and its login view (also noindex in admin.html)
+Disallow: /admin
+Disallow: /admin.html
+Disallow: /admin/
+
+# API routes
+Disallow: /api
+Disallow: /api/
+
+# Supabase config shipped to the browser - not useful to index
+Disallow: /gallery-config.js
+
+Sitemap: https://allae-clinic-website.vercel.app/sitemap.xml

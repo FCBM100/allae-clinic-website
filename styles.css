@@ -641,6 +641,19 @@ body.menu-open {
     .hero-subtitle { font-size: 1.5rem; }
 }
 
+.hero-title-sub {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    .hero-title-sub { font-size: 1.5rem; }
+}
+
 .hero-desc {
     font-size: 1rem;
     color: var(--on-surface-variant);
